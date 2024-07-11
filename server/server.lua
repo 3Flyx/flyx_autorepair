@@ -7,12 +7,12 @@ ESX.RegisterServerCallback('flyx_autorepair:checkmechanic', function(source, cb)
 
     for i = 1, #players do
         local xPlayer = ESX.GetPlayerFromId(players[i])
-        if xPlayer.job.name == 'mechanic'then
+        if xPlayer.job.name == 'mechanic' then
             mechCount = mechCount + 1
         end
     end
 
-    if mechCount >= 2 then
+    if mechCount >= Config.maxMech then
 		cb(false)
 		TriggerClientEvent('esx:showNotification', source, 'Jest zbyt wielu mechaników na służbie')
     else

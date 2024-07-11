@@ -1,6 +1,7 @@
 Config = {}
 
 Config.money = 500 -- Ile hajsu zabiera po naprawie furmanki
+Config.maxMech = 2 -- Jeżeli ilość mechaników na służbie przekroczy tą liczbę to lokalni mechanicy nie działają
 
 Config.RepairLocations = { -- Lokalizacje mechaników
  	{x = -72.71, y = -1339.19, z = 29.25},

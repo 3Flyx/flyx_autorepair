@@ -103,8 +103,6 @@ Citizen.CreateThread(function()
     end
 end)
 
-
-
 RegisterNetEvent("Flyx:potwierdzplatnosc")
 AddEventHandler("Flyx:potwierdzplatnosc", function(target, faktura, id, job)
 	local alert = lib.alertDialog({
