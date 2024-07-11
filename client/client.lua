@@ -16,7 +16,7 @@ end)
 Citizen.CreateThread(function()
 	Citizen.Wait(2000)
 
-	for k, conf in pairs(Config.Repiar) do
+	for k, conf in pairs(Config.RepairLocations) do
 		local blip = AddBlipForCoord(conf.x, conf.y, conf.z)
 
 		SetBlipSprite (blip, 446)
@@ -32,7 +32,7 @@ Citizen.CreateThread(function()
 end)
 
 Citizen.CreateThread(function()
-    for k, conf in pairs(Config.Repiar) do
+    for k, conf in pairs(Config.RepairLocations) do
 
 		local options = {
 			{

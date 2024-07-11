@@ -1,8 +1,8 @@
 Config = {}
 
-Config.money = 500
+Config.money = 500 -- Ile hajsu zabiera po naprawie furmanki
 
-Config.Repiar = {
+Config.RepairLocations = { -- Lokalizacje mechaników
  	{x = -72.71, y = -1339.19, z = 29.25},
 	{x = 1178.54, y = 2639.99, z = 37.75},
 	{x = 107.48, y = 6624.79, z = 31.78},
